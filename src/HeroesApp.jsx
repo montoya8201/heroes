@@ -1,10 +1,11 @@
-import { Fragment } from "react";
+
 import { AppRouter } from "./router/AppRouter";
+import { AuthProvider } from "./auth";
 
 export const HeroesApp = () => {
   return (
-    <Fragment>
-      <AppRouter/>
-    </Fragment>
+    <AuthProvider>
+      <AppRouter />
+    </AuthProvider>
   );
 };
